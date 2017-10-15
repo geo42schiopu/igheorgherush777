@@ -88,7 +88,11 @@ int main(void)
 	ft_putchar('\n');
 	colle(2,5);
 	ft_putchar('\n');
+	colle(1,1);
+	ft_putchar('\n');
 	colle(5,2);
+	ft_putchar('\n');
+	colle(125,42);
 	ft_putchar('\n');
 	return (0);
 
