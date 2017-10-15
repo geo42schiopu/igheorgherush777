@@ -70,12 +70,12 @@ void	colle(int x, int y)
 	if (x <= 0 || y <= 0)
 		return;
 	if (y >= 1)
-		first_line(y);
+		first_line(x);
 	if (y >=3)
 		while(i++ < (y-2))
-			core_lines(y);
+			core_lines(x);
 	if (y > 1)
-		last_line(y);
+		last_line(x);
 }
 
 int main(void)
