@@ -13,7 +13,7 @@ void	first_line(int w)
 		ft_putchar('A');
 	if (w >= 3)
 	{
-		while (++i < (w-2))
+		while (i++ < (w-2))
 			ft_putchar('B');
 	}
 	if (w >= 2)
@@ -70,7 +70,7 @@ void	colle(int x, int y)
 	if (x <= 0 || y <= 0)
 		return;
 	if (y >= 1)
-		first_line(x);
+		first_line(y);
 	if (y >=3)
 		while(i++ < (y-2))
 			core_lines(y);
@@ -81,6 +81,15 @@ void	colle(int x, int y)
 int main(void)
 {
 	colle(5,5);
+	ft_putchar('\n');
+	colle(10,1);
+	ft_putchar('\n');
+	colle(1,10);
+	ft_putchar('\n');
+	colle(2,5);
+	ft_putchar('\n');
+	colle(5,2);
+	ft_putchar('\n');
 	return (0);
 
 }
